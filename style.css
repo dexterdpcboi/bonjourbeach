@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/hero-bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.menu-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    background: rgba(255, 255, 255, 0,5);
+    padding: 30px 25px;
+    cursor: pointer;
+}
+
+.sidebar{
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(rgba(74, 50, 252, 0.85), rgba(27, 182, 202, 0.842));
+    padding: 20px 60px;
+    color: white;
+}
+.top-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.arrow-1{
+    width: 30px;
+    cursor: pointer;
+}
+.top-links div img{
+    width: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.sidebar h1{
+    margin-top: 108px;
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sidebar h3{
+    font-weight: 500%;
+}
+
+.sidebar p{
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.sidebar a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    margin-top: 30px;
+    border: 10px 10px 10px 10px;
+    border-radius: 5px;
+    padding: 15px 40px;
+    font-size: 14px;
+}
+
+.sidebar a:hover{
+    background-color:rgba(74, 50, 252, 0.85);
+    cursor: pointer;
+}
+
+#btn{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateY(-50%);
+    width: 100px;
+    cursor: pointer;
+}
+
+#backVideo{
+    position: absolute;
+    right:0;
+    bottom: 0;
+    display: none;
+}
+@media (min-aspect-ration: 16/9){
+    #backVideo{width: 100%;
+            height: auto;
+        }
+}
+
+@media (min-aspect-ration: 16/9){
+    #backVideo {width: auto;
+            height: 100%;
+        }
+}
